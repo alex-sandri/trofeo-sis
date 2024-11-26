@@ -5,6 +5,7 @@ name = "pypi"
 
 [scripts]
 dev = "python manage.py runserver"
+static = "python manage.py collectstatic --clear --noinput"
 
 [packages]
 django = "==5.1.3"

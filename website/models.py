@@ -1,3 +1,11 @@
 from django.db import models
 
-# Create your models here.
+
+class Sport(models.Model):
+    nome = models.TextField()
+
+    class Meta:
+        verbose_name_plural = 'Sport'
+
+    def __str__(self) -> str:
+        return self.nome

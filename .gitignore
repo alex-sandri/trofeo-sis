@@ -1,5 +1,12 @@
 # Node.js
 node_modules/
 
+# Django static files
+/static/
+/website/static/
+
 # SQLite DB
 db.sqlite3
+
+# Miscellaneous
+.DS_Store

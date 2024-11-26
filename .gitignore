@@ -1,9 +1,12 @@
 # Node.js
-node_modules/
+/node_modules/
 
 # Django static files
 /static/
 /website/static/
+
+# Python
+__pycache__/
 
 # SQLite DB
 db.sqlite3

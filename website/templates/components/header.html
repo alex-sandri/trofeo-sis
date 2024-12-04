@@ -1,0 +1,44 @@
+{% load static %}
+
+<div class="it-header-slim-wrapper">
+  <div class="container-xxl">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-slim-wrapper-content">
+          <a class="d-none d-lg-block navbar-brand" href="#">Trofeo SIS</a>
+          <div class="nav-mobile">
+            <nav aria-label="Navigazione accessoria">
+              <a class="it-opener d-lg-none" data-bs-toggle="collapse"
+                href="#menu1a" role="button" aria-expanded="false"
+                aria-controls="menu4">
+                <span>Trofeo SIS</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="{% static 'website/svg/sprites.svg' %}#it-expand">
+                  </use>
+                </svg>
+              </a>
+              <div class="link-list-wrapper collapse" id="menu1a">
+                <ul class="link-list">
+                  <li>
+                    <a class="dropdown-item list-item" href="#">Trasparenza</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="it-header-slim-right-zone">
+            <a href="#" class="btn btn-primary btn-icon btn-full">
+              <span class="rounded-icon">
+                <svg class="icon icon-primary">
+                  <use href="{% static 'website/svg/sprites.svg' %}#it-user">
+                  </use>
+                </svg>
+              </span>
+              <span class="d-none d-md-block">Accedi</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block centered_container %}
+<h1>{{ sport.nome }}</h1>
+
+<div class="row">
+  <div class="col-12 col-lg-6">
+    <!--start card-->
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="card-body">
+          <div class="categoryicon-top">
+            <svg class="icon">
+              <use href="{% static 'website/svg/sprites.svg' %}#it-file"></use>
+            </svg>
+            <span class="text">Regolamento</span>
+          </div>
+          <a href="#">
+            <h3 class="card-title h5 ">Vai</h3>
+          </a>
+          <p class="card-text font-serif">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+    <!--end card-->
+  </div>
+  <div class="col-12 col-lg-6">
+    <!--start card-->
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="card-body">
+          <div class="categoryicon-top">
+            <svg class="icon">
+              <use href="{% static 'website/svg/sprites.svg' %}#it-info-circle">
+              </use>
+            </svg>
+            <span class="text">Iscrizione</span>
+          </div>
+          <a href="#">
+            <h3 class="card-title h5 ">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor…</h3>
+          </a>
+          <p class="card-text font-serif">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+    <!--end card-->
+  </div>
+</div>
+{% endblock centered_container %}

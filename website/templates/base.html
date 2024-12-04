@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trofeo SIS">
+  <title>Trofeo SIS</title>
+  <link rel="stylesheet"
+    href="{% static 'website/css/bootstrap-italia.css' %}" />
+</head>
+
+<body>
+  {% include 'components/header.html' %}
+
+  <div class="main-body">
+    {% block container %}
+    <div class="container">
+      <div class="col-12 py-md-5 bd-content">
+        {% block centered_container %}{% endblock %}
+      </div>
+    </div>
+    {% endblock container %}
+  </div>
+
+  <script
+    src="{% static 'website/js/bootstrap-italia.bundle.min.js' %}"></script>
+  <script>bootstrap.loadFonts("{% static 'website/fonts' %}");</script>
+</body>
+
+</html>

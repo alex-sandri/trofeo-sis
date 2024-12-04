@@ -1,0 +1,37 @@
+<!-- Extends default Bootstrap Italia template -->
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block centered_container %}
+<div class="row">
+  {% for sport in sports %}
+  <div class="col-md-3">
+    <div class="card-wrapper">
+      <div class="card card-img no-after">
+        <div class="img-responsive-wrapper">
+          <div class="img-responsive">
+            <figure class="img-wrapper">
+              <img
+                src="https://placehold.co/310x190/0066cc/FFFFFF/?text={{ sport.nome }}"
+                title="titolo immagine" alt="descrizione immagine">
+            </figure>
+          </div>
+        </div>
+        <div class="card-body">
+          <a class="read-more" href="{% url 'sport' sport.id %}">
+            <span class="text">Leggi di più</span>
+            <span class="visually-hidden">su Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit…</span>
+            <svg class="icon">
+              <use href="{% static 'svg/sprites.svg' %}#it-arrow-right">
+              </use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock centered_container %}
